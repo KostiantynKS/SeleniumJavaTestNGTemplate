@@ -1,5 +1,6 @@
 package base;
 
+import constants.ConfigConstants;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -15,7 +16,7 @@ public class BaseTest {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.get("https://admin-demo.nopcommerce.com/login");
+        driver.get(ConfigConstants.URL);
     }
 
     @AfterMethod
