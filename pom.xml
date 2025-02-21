@@ -21,7 +21,6 @@
             <version>7.10.2</version>
 
         </dependency>
-
     </dependencies>
     <build>
         <plugins>
